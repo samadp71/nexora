@@ -3,142 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NEXORA – Digital Asset Project</title>
+  <title>NEXORA – Transparency-First Digital Assets</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #020617);
-      color: #e5e7eb;
+      background: radial-gradient(circle at top, #0b1f17, #050a08);
+      color: #e6f2ee;
     }
 
-    .container {
+    header {
+      text-align: center;
+      padding: 100px 20px 80px;
+    }
+
+    header h1 {
+      font-size: 56px;
+      letter-spacing: 4px;
+      margin-bottom: 12px;
+      color: #2ecc71;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #a8dccc;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    section {
       max-width: 900px;
       margin: auto;
       padding: 60px 20px;
+      text-align: center;
     }
 
-    h1 {
-      font-size: 48px;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #2ecc71;
     }
 
-    .tagline {
+    section p {
       font-size: 18px;
-      color: #93c5fd;
-      margin-bottom: 30px;
+      line-height: 1.7;
+      color: #cfe9df;
     }
 
-    p {
-      line-height: 1.8;
-      color: #d1d5db;
-    }
-
-    .section {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
       margin-top: 50px;
     }
 
-    .section h2 {
-      font-size: 26px;
-      margin-bottom: 15px;
-      color: #f8fafc;
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(46,204,113,0.25);
+      border-radius: 14px;
+      padding: 30px;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
+    .card h3 {
+      color: #2ecc71;
       margin-bottom: 10px;
     }
 
-    .badge {
-      display: inline-block;
-      background: rgba(59,130,246,0.15);
-      color: #93c5fd;
-      padding: 4px 10px;
-      border-radius: 20px;
-      font-size: 13px;
-      margin-left: 6px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 22px;
-      background: #3b82f6;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #2563eb;
-    }
-
     footer {
-      margin-top: 80px;
-      font-size: 13px;
-      color: #9ca3af;
       text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      color: #7fbfa8;
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>NEXORA</h1>
-    <div class="tagline">A Digital Asset Project Built for the Future</div>
 
+  <header>
+    <h1>NEXORA</h1>
     <p>
-      NEXORA is an early-stage digital asset project focused on simplicity,
-      transparency, and long-term sustainability.  
-      The goal is to build a lightweight ecosystem that grows organically with its community.
+      A transparency-first digital asset project focused on sustainable,
+      long-term growth and honest communication.
+    </p>
+  </header>
+
+  <section>
+    <h2>Our Vision</h2>
+    <p>
+      NEXORA is built step by step with clarity, accountability, and trust.
+      No hype — just measurable progress and open development.
     </p>
 
-    <div class="section">
-      <h2>Project Vision</h2>
-      <p>
-        NEXORA aims to explore practical use cases within decentralized environments,
-        while maintaining a clear and honest development path.
-      </p>
+    <div class="cards">
+      <div class="card">
+        <h3>Transparency</h3>
+        <p>Clear goals, open communication, and public development.</p>
+      </div>
+      <div class="card">
+        <h3>Long-Term Growth</h3>
+        <p>Focused on sustainability rather than short-term speculation.</p>
+      </div>
+      <div class="card">
+        <h3>Community-Driven</h3>
+        <p>Built with feedback, collaboration, and shared vision.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Core Principles</h2>
-      <ul>
-        <li>Transparency over hype</li>
-        <li>Clean and simple architecture</li>
-        <li>Community-driven growth</li>
-        <li>Long-term mindset</li>
-      </ul>
-    </div>
+  <footer>
+    © 2025 NEXORA — Transparency First
+  </footer>
 
-    <div class="section">
-      <h2>Token Information</h2>
-      <ul>
-        <li><strong>Name:</strong> NEXORA <span class="badge">NEX</span></li>
-        <li><strong>Network:</strong> Polygon</li>
-        <li><strong>Status:</strong> Early Stage</li>
-        <li><strong>Contract:</strong> On-chain verified</li>
-      </ul>
-
-      <!-- بعداً لینک واقعی DexScreener رو اینجا می‌ذاری -->
-      <!--
-      <a class="btn" href="https://dexscreener.com/polygon/YOUR_PAIR_ADDRESS" target="_blank">
-        View on DexScreener
-      </a>
-      -->
-    </div>
-
-    <footer>
-      © 2025 NEXORA — Built with clarity and purpose
-    </footer>
-  </div>
 </body>
 </html>
