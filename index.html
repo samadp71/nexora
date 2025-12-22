@@ -11,8 +11,7 @@
       font-family: 'Segoe UI', Arial, sans-serif;
       background: radial-gradient(circle at top, #0f1b2b, #05070c);
       color: #e8f3ef;
-      line-height: 1.7;
-      overflow-x: hidden;
+      line-height: 1.8;
     }
 
     .container {
@@ -25,14 +24,14 @@
     h1 {
       font-size: 56px;
       letter-spacing: 4px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       background: linear-gradient(90deg, #3cffb0, #5fdcff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     h2 {
-      font-size: 36px;
+      font-size: 34px;
       margin: 80px 0 25px;
       color: #3cffb0;
     }
@@ -50,17 +49,6 @@
       margin-bottom: 40px;
     }
 
-    .fade {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease;
-    }
-
-    .fade.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -69,44 +57,29 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255,255,255,0.04);
       border-radius: 16px;
       padding: 30px;
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(60, 255, 176, 0.25);
-      transition: all 0.35s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 0 25px rgba(60, 255, 176, 0.25);
-      border-color: #3cffb0;
+      border: 1px solid rgba(60,255,176,0.25);
     }
 
     .card h3 {
-      margin-bottom: 12px;
-      font-size: 22px;
+      margin-bottom: 10px;
       color: #3cffb0;
     }
 
     .roadmap {
       max-width: 800px;
-      margin: 50px auto 0;
+      margin: 50px auto;
       text-align: left;
     }
 
     .step {
       padding: 20px;
       border-left: 3px solid #3cffb0;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
       background: rgba(255,255,255,0.03);
       border-radius: 8px;
-    }
-
-    .step span {
-      color: #9fffd6;
-      font-size: 14px;
-      letter-spacing: 1px;
     }
 
     .buttons {
@@ -121,112 +94,111 @@
       padding: 14px 28px;
       border-radius: 30px;
       text-decoration: none;
-      color: #05070c;
       font-weight: bold;
       background: linear-gradient(90deg, #3cffb0, #5fdcff);
-      transition: all 0.3s ease;
+      color: #05070c;
     }
 
     .btn.secondary {
       background: transparent;
-      color: #9fffd6;
       border: 1px solid #3cffb0;
+      color: #9fffd6;
     }
 
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 0 20px rgba(60,255,176,0.4);
+    .fa {
+      direction: rtl;
+      text-align: center;
+      margin-top: 120px;
+      color: #cfe3dc;
     }
 
     footer {
       margin-top: 100px;
       font-size: 14px;
       color: #8fbfb1;
-      opacity: 0.85;
     }
   </style>
 </head>
 
 <body>
-  <div class="container fade">
+
+  <!-- ENGLISH -->
+  <div class="container">
     <h1>NEXORA</h1>
     <div class="tagline">Built slowly. Built openly.</div>
 
     <p>
       NEXORA is a transparency-first digital asset project on Polygon,
-      designed for sustainable, long-term growth and honest communication.
+      focused on sustainable, long-term growth and honest communication.
     </p>
   </div>
 
-  <div class="container fade">
+  <div class="container">
     <h2>Our Vision</h2>
     <p>
-      We believe real progress is built step by step — not through hype,
-      but through consistency, accountability, and open development.
+      Real progress is built step by step — not through hype,
+      but through clarity, accountability, and open development.
     </p>
 
     <div class="cards">
       <div class="card">
         <h3>Transparency</h3>
-        <p>Clear intentions, open communication, and publicly visible progress.</p>
+        <p>Clear goals, open communication, and visible progress.</p>
       </div>
       <div class="card">
         <h3>Long-Term Growth</h3>
-        <p>Focused on sustainability rather than short-term speculation.</p>
+        <p>Sustainability over speculation. Patience over noise.</p>
       </div>
       <div class="card">
         <h3>Community-Driven</h3>
-        <p>Built with feedback, collaboration, and shared vision.</p>
+        <p>Built with feedback, shared vision, and trust.</p>
       </div>
     </div>
   </div>
 
-  <div class="container fade">
+  <div class="container">
     <h2>Roadmap</h2>
     <div class="roadmap">
       <div class="step">
-        <span>PHASE 1</span>
-        <p>Foundation, transparency framework, and public communication channels.</p>
+        <strong>Phase 1</strong><br>
+        Foundation, transparency framework, public launch.
       </div>
       <div class="step">
-        <span>PHASE 2</span>
-        <p>Community growth, feedback loops, and gradual ecosystem expansion.</p>
+        <strong>Phase 2</strong><br>
+        Community growth, open feedback, steady expansion.
       </div>
       <div class="step">
-        <span>PHASE 3</span>
-        <p>Long-term sustainability, tooling, and continuous refinement.</p>
+        <strong>Phase 3</strong><br>
+        Long-term sustainability and ecosystem development.
       </div>
     </div>
   </div>
 
-  <div class="container fade">
-    <h2>Our Approach</h2>
+  <div class="container">
+    <h2>Join Us</h2>
+    <div class="buttons">
+      <a href="https://x.com/NEXORA" class="btn" target="_blank">Follow on X</a>
+      <a href="https://t.me/" class="btn secondary" target="_blank">Telegram</a>
+    </div>
+  </div>
+
+  <!-- FARSI -->
+  <div class="container fa">
+    <h2>چشم‌انداز ما</h2>
     <p>
-      No aggressive marketing. No artificial urgency. No empty promises.
-      Just steady execution, transparent updates, and measurable progress over time.
+      نکسورا با تمرکز بر شفافیت، رشد پایدار و ارتباط صادقانه ساخته می‌شود.
+      بدون هیجان مصنوعی، بدون وعده‌های توخالی —
+      فقط پیشرفت قابل اندازه‌گیری و توسعه‌ی باز.
     </p>
 
-    <div class="buttons">
-      <a href="#" class="btn">Join on X</a>
-      <a href="#" class="btn secondary">Join Telegram</a>
-    </div>
+    <p>
+      ما به رشد بلندمدت، اعتماد جامعه و ساختن قدم‌به‌قدم باور داریم.
+    </p>
   </div>
 
-  <footer class="container fade">
+  <footer class="container">
     © 2025 NEXORA — Transparency First
   </footer>
 
-  <script>
-    const faders = document.querySelectorAll('.fade');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.15 });
-
-    faders.forEach(fade => observer.observe(fade));
-  </script>
 </body>
 </html>
