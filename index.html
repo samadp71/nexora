@@ -1,92 +1,122 @@
-<!-- WHITEPAPER SECTION -->
-<section class="whitepaper-section">
-  <div class="whitepaper-container">
-    <h1 class="logo">NEXORA</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NEXORA — Transparency First</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <p class="tagline">Built slowly. Built openly.</p>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0b1220, #0f1b2e);
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-    <p class="description">
+    .container {
+      max-width: 700px;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+      letter-spacing: 4px;
+      color: #5ef2d6;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #cfd8e3;
+      margin-bottom: 30px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+      color: #8fa3b8;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.25s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #5ef2d6;
+      color: #0b1220;
+    }
+
+    .btn-primary:hover {
+      background: #48d9bf;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 2px solid #5ef2d6;
+      color: #5ef2d6;
+      background: transparent;
+    }
+
+    .btn-secondary:hover {
+      background: #5ef2d6;
+      color: #0b1220;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>NEXORA</h1>
+
+    <div class="tagline">Built slowly. Built openly.</div>
+
+    <p>
       NEXORA is a transparency-first digital asset project on Polygon,
       focused on sustainable, long-term growth and honest communication.
     </p>
 
-    <div class="whitepaper-actions">
-      <a href="whitepaper.html" class="btn primary">Read Whitepaper</a>
-      <a href="assets/Nexora whitepaper.pdf" class="btn secondary" download>
+    <div class="buttons">
+      <!-- View Whitepaper -->
+      <a
+        href="assets/Nexora%20whitepaper.pdf"
+        target="_blank"
+        class="btn btn-secondary"
+      >
+        Read Whitepaper
+      </a>
+
+      <!-- Download Whitepaper -->
+      <a
+        href="assets/Nexora%20whitepaper.pdf"
+        download
+        class="btn btn-primary"
+      >
         Download PDF
       </a>
     </div>
   </div>
-</section>
 
-<style>
-.whitepaper-section {
-  min-height: 100vh;
-  background: radial-gradient(circle at top, #0f2027, #000);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-family: Inter, Arial, sans-serif;
-}
-
-.whitepaper-container {
-  text-align: center;
-  max-width: 720px;
-  padding: 40px 20px;
-}
-
-.logo {
-  font-size: 56px;
-  letter-spacing: 4px;
-  color: #4de6c1;
-  margin-bottom: 10px;
-}
-
-.tagline {
-  font-size: 18px;
-  opacity: 0.85;
-  margin-bottom: 24px;
-}
-
-.description {
-  font-size: 17px;
-  line-height: 1.7;
-  opacity: 0.9;
-  margin-bottom: 40px;
-}
-
-.whitepaper-actions {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 14px 28px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.25s ease;
-}
-
-.btn.primary {
-  background: #4de6c1;
-  color: #000;
-}
-
-.btn.primary:hover {
-  background: #3cc9a7;
-}
-
-.btn.secondary {
-  border: 1px solid #4de6c1;
-  color: #4de6c1;
-}
-
-.btn.secondary:hover {
-  background: #4de6c1;
-  color: #000;
-}
-</style>
+</body>
+</html>
