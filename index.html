@@ -2,147 +2,179 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NEXORA — Transparency First</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     body {
       margin: 0;
-      min-height: 100vh;
       font-family: "Segoe UI", Arial, sans-serif;
       background: radial-gradient(circle at top, #0f1b2d, #05080f);
       color: #e8f3ef;
+      line-height: 1.8;
+    }
+
+    .hero {
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
     }
 
-    .container {
-      max-width: 900px;
-      padding: 40px 24px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: center;
+    h1 {
+      font-size: 64px;
+      letter-spacing: 6px;
+      margin-bottom: 16px;
+      color: #6fffe9;
     }
 
-    .left h1 {
-      font-size: 48px;
-      margin: 0 0 12px;
-      color: #7fffe0;
-      letter-spacing: 2px;
+    .tagline {
+      font-size: 18px;
+      opacity: 0.9;
+      margin-bottom: 8px;
     }
 
-    .left .tagline {
-      color: #9fd8cf;
-      margin-bottom: 24px;
+    .subtitle {
       font-size: 15px;
-    }
-
-    .left p {
-      font-size: 16px;
-      line-height: 1.8;
-      opacity: 0.95;
+      max-width: 720px;
+      margin: 0 auto 32px;
+      opacity: 0.8;
     }
 
     .actions {
-      margin-top: 28px;
       display: flex;
       gap: 16px;
+      justify-content: center;
       flex-wrap: wrap;
     }
 
     .btn {
       padding: 12px 22px;
       border-radius: 10px;
-      font-weight: 600;
       font-size: 14px;
       text-decoration: none;
       transition: all 0.25s ease;
-      border: 1px solid transparent;
     }
 
-    .btn-read {
-      color: #7fffe0;
-      border: 1px solid #7fffe0;
+    .btn-outline {
+      border: 1px solid #6fffe9;
+      color: #6fffe9;
       background: transparent;
     }
 
-    .btn-read:hover {
-      background: rgba(127, 255, 224, 0.1);
+    .btn-outline:hover {
+      background: #6fffe9;
+      color: #0b1320;
     }
 
-    .btn-download {
-      background: #7fffe0;
-      color: #06211a;
+    .btn-solid {
+      background: #6fffe9;
+      color: #0b1320;
+      border: 1px solid #6fffe9;
     }
 
-    .btn-download:hover {
-      background: #9dffeb;
+    .btn-solid:hover {
+      opacity: 0.85;
     }
 
-    .right {
-      text-align: right;
-      opacity: 0.9;
+    .section {
+      padding: 80px 20px;
+      text-align: center;
     }
 
-    .right p {
-      margin: 0;
-      font-size: 14px;
-      color: #9fd8cf;
+    .section h2 {
+      color: #4dffb2;
+      font-size: 32px;
+      margin-bottom: 16px;
     }
 
-    @media (max-width: 800px) {
-      .container {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      .right {
-        text-align: center;
-      }
+    .section p {
+      max-width: 760px;
+      margin: 0 auto 40px;
+      opacity: 0.85;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border: 1px solid rgba(111,255,233,0.25);
+      border-radius: 16px;
+      padding: 24px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .card h3 {
+      color: #6fffe9;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 13px;
+      opacity: 0.6;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <div class="left">
-      <h1>NEXORA</h1>
+  <!-- HERO -->
+  <section class="hero">
+    <div>
       <div class="tagline">Built slowly. Built openly.</div>
-
-      <p>
-        NEXORA is a transparency-first digital asset project on Polygon,
-        focused on sustainable, long-term growth and honest communication.
+      <h1>NEXORA</h1>
+      <p class="subtitle">
+        A transparency-first digital asset project on Polygon, focused on sustainable,
+        long-term growth and honest communication.
       </p>
 
       <div class="actions">
-        <!-- Read (opens in browser) -->
-        <a
-          class="btn btn-read"
-          href="assets/Nexora%20whitepaper.pdf"
-          target="_blank"
-        >
-          Read Whitepaper
-        </a>
-
-        <!-- Download -->
-        <a
-          class="btn btn-download"
-          href="assets/Nexora%20whitepaper.pdf"
-          download
-        >
+        <a href="whitepaper.html" class="btn btn-outline">Read Whitepaper</a>
+        <a href="assets/Nexora whitepaper.pdf" class="btn btn-solid" download>
           Download PDF
         </a>
       </div>
     </div>
+  </section>
 
-    <div class="right">
-      <p>Polygon-based</p>
-      <p>Transparency-first</p>
-      <p>Long-term vision</p>
+  <!-- VISION -->
+  <section class="section">
+    <h2>Our Vision</h2>
+    <p>
+      NEXORA is built step by step with clarity, accountability, and trust.
+      No hype — just measurable progress and open development.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Transparency</h3>
+        <p>Clear goals, open communication, and public development.</p>
+      </div>
+
+      <div class="card">
+        <h3>Long-Term Growth</h3>
+        <p>Focused on sustainability rather than short-term speculation.</p>
+      </div>
+
+      <div class="card">
+        <h3>Community-Driven</h3>
+        <p>Built with feedback, collaboration, and shared vision.</p>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <footer>
+    © 2025 NEXORA — Transparency First
+  </footer>
+
 </body>
 </html>
