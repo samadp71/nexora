@@ -8,115 +8,141 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0b1220, #0f1b2e);
-      color: #ffffff;
-      height: 100vh;
+      min-height: 100vh;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: radial-gradient(circle at top, #0f1b2d, #05080f);
+      color: #e8f3ef;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
     }
 
     .container {
-      max-width: 700px;
-      padding: 40px 20px;
+      max-width: 900px;
+      padding: 40px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
     }
 
-    h1 {
-      font-size: 64px;
-      margin-bottom: 20px;
-      letter-spacing: 4px;
-      color: #5ef2d6;
+    .left h1 {
+      font-size: 48px;
+      margin: 0 0 12px;
+      color: #7fffe0;
+      letter-spacing: 2px;
     }
 
-    p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: #cfd8e3;
-      margin-bottom: 30px;
+    .left .tagline {
+      color: #9fd8cf;
+      margin-bottom: 24px;
+      font-size: 15px;
     }
 
-    .tagline {
+    .left p {
       font-size: 16px;
-      letter-spacing: 1px;
-      margin-bottom: 40px;
-      color: #8fa3b8;
+      line-height: 1.8;
+      opacity: 0.95;
     }
 
-    .buttons {
+    .actions {
+      margin-top: 28px;
       display: flex;
-      gap: 20px;
-      justify-content: center;
+      gap: 16px;
       flex-wrap: wrap;
     }
 
     .btn {
-      text-decoration: none;
-      padding: 14px 28px;
-      border-radius: 8px;
-      font-size: 16px;
+      padding: 12px 22px;
+      border-radius: 10px;
       font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
       transition: all 0.25s ease;
-      border: none;
-      cursor: pointer;
+      border: 1px solid transparent;
     }
 
-    .btn-primary {
-      background: #5ef2d6;
-      color: #0b1220;
-    }
-
-    .btn-primary:hover {
-      background: #48d9bf;
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      border: 2px solid #5ef2d6;
-      color: #5ef2d6;
+    .btn-read {
+      color: #7fffe0;
+      border: 1px solid #7fffe0;
       background: transparent;
     }
 
-    .btn-secondary:hover {
-      background: #5ef2d6;
-      color: #0b1220;
-      transform: translateY(-2px);
+    .btn-read:hover {
+      background: rgba(127, 255, 224, 0.1);
+    }
+
+    .btn-download {
+      background: #7fffe0;
+      color: #06211a;
+    }
+
+    .btn-download:hover {
+      background: #9dffeb;
+    }
+
+    .right {
+      text-align: right;
+      opacity: 0.9;
+    }
+
+    .right p {
+      margin: 0;
+      font-size: 14px;
+      color: #9fd8cf;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .right {
+        text-align: center;
+      }
     }
   </style>
 </head>
+
 <body>
-
   <div class="container">
-    <h1>NEXORA</h1>
 
-    <div class="tagline">Built slowly. Built openly.</div>
+    <div class="left">
+      <h1>NEXORA</h1>
+      <div class="tagline">Built slowly. Built openly.</div>
 
-    <p>
-      NEXORA is a transparency-first digital asset project on Polygon,
-      focused on sustainable, long-term growth and honest communication.
-    </p>
+      <p>
+        NEXORA is a transparency-first digital asset project on Polygon,
+        focused on sustainable, long-term growth and honest communication.
+      </p>
 
-    <div class="buttons">
-      <!-- View Whitepaper -->
-      <a
-        href="assets/Nexora%20whitepaper.pdf"
-        target="_blank"
-        class="btn btn-secondary"
-      >
-        Read Whitepaper
-      </a>
+      <div class="actions">
+        <!-- Read (opens in browser) -->
+        <a
+          class="btn btn-read"
+          href="assets/Nexora%20whitepaper.pdf"
+          target="_blank"
+        >
+          Read Whitepaper
+        </a>
 
-      <!-- Download Whitepaper -->
-      <a
-        href="assets/Nexora%20whitepaper.pdf"
-        download
-        class="btn btn-primary"
-      >
-        Download PDF
-      </a>
+        <!-- Download -->
+        <a
+          class="btn btn-download"
+          href="assets/Nexora%20whitepaper.pdf"
+          download
+        >
+          Download PDF
+        </a>
+      </div>
     </div>
-  </div>
 
+    <div class="right">
+      <p>Polygon-based</p>
+      <p>Transparency-first</p>
+      <p>Long-term vision</p>
+    </div>
+
+  </div>
 </body>
 </html>
